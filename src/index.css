@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Grandma-friendly "Natural Tones" color palette */
+  --color-grandma-cream: #FAF9F6;
+  --color-grandma-sage: #4A6741;
+  --color-grandma-blush: #E8E4D9;
+  --color-grandma-berry: #BC5A41;
+  --color-grandma-clay: #2D2A26;
+  --color-natural-border: #D6CFC1;
+  --color-natural-gold: #FDEBD0;
+  --color-natural-gold-text: #D35400;
+  --color-natural-slate: #34495E;
+  --color-natural-slate-bg: #E5E8E8;
+}
+
+/* Custom global overrides for high-legibility grandma-friendly styles */
+html, body {
+  font-family: var(--font-sans);
+  background-color: var(--color-grandma-cream);
+  color: #2D2A26;
+  overflow-x: hidden;
+}
+
+/* Custom focus ring high-contrast styling */
+input:focus, button:focus {
+  outline: 4px solid var(--color-grandma-sage);
+  outline-offset: 2px;
+}
+
+/* Scrollbar styles to be wide and easy to grab */
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F4F6;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 8px;
+  border: 3px solid #F3F4F6;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

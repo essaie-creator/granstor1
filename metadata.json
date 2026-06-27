@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Grandma-Friendly Duplicate Finder \u0026 Disk Cleaner",
+  "description": "An offline-first, high-contrast, easy-to-use duplicate finder and storage cleaner designed with large buttons and simple instructions for grandmas and technology beginners.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
